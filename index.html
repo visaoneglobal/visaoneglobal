@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    VisaOne Global – Nursing & Physiotherapy Ausbildung and Job Visa for
+    Germany
+  </title>
+  <meta name="description"
+    content="Build your career in Germany with VisaOne Global. From language to visa, we help nurses and physiotherapists achieve success abroad." />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- AOS CSS for animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #1a4b8c;
+      --primary-rgb: 26, 75, 140;
+      --secondary: #e63946;
+      --secondary-rgb: 230, 57, 70;
+      --accent: #ffc107;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --white: #ffffff;
+      --light-gray: #e9ecef;
+      --medium-gray: #adb5bd;
+      --dark-gray: #495057;
+      --transparent-white-02: rgba(255, 255, 255, 0.2);
+      --transparent-white-01: rgba(255, 255, 255, 0.1);
+      --shadow-light: rgba(0, 0, 0, 0.1);
+      --shadow-medium: rgba(0, 0, 0, 0.15);
+      --red-hover: #c1121f;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: var(--dark);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(var(--primary-rgb), 0.8),
+          rgba(var(--primary-rgb), 0.9)),
+        url("https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80");
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+      padding: 150px 0 100px;
+      position: relative;
+    }
+
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-section p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+      padding: 12px 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--red-hover);
+      border-color: var(--red-hover);
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    .btn-outline-light {
+      padding: 12px 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-light:hover {
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    .highlight-bar {
+      background-color: var(--transparent-white-02);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .highlight-item {
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .highlight-item:hover {
+      transform: scale(1.1);
+    }
+
+    .highlight-item i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 3rem;
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    .section-title:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background-color: var(--secondary);
+    }
+
+    .why-germany-card {
+      border-radius: 15px;
+      padding: 30px 20px;
+      text-align: center;
+      height: 100%;
+      transition: all 0.4s ease;
+      border: 1px solid var(--light-gray);
+      background: var(--white);
+    }
+
+    .why-germany-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 15px 40px var(--shadow-medium);
+    }
+
+    .why-germany-card i {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .why-germany-card:hover i {
+      color: var(--secondary);
+    }
+
+    .program-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px var(--shadow-light);
+      transition: all 0.4s ease;
+      height: 100%;
+    }
+
+    .program-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px var(--shadow-medium);
+    }
+
+    .program-header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 20px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .program-body {
+      padding: 25px;
+    }
+
+    .program-feature {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      transition: transform 0.3s ease;
+    }
+
+    .program-feature:hover {
+      transform: translateX(5px);
+    }
+
+    .program-feature i {
+      color: var(--secondary);
+      margin-right: 10px;
+      margin-top: 3px;
+    }
+
+    /* Process Section - Enhanced Timeline with Animations */
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .timeline::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      background-color: var(--primary);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 1s ease;
+    }
+
+    .timeline.appear::after {
+      transform: scaleY(1);
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      width: 50%;
+      box-sizing: border-box;
+      opacity: 0;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .timeline-item.appear {
+      opacity: 1;
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      transform: translateX(-50px);
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      transform: translateX(50px);
+    }
+
+    .timeline-item.appear {
+      transform: translateX(0);
+    }
+
+    .timeline-content {
+      padding: 20px 30px;
+      background-color: var(--white);
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 5px 15px var(--shadow-light);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .timeline-content:hover {
+      box-shadow: 0 10px 25px var(--shadow-medium);
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content::after {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: -15px;
+      border: medium solid var(--white);
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent var(--white);
+    }
+
+    .timeline-item:nth-child(even) .timeline-content::after {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: -15px;
+      border: medium solid var(--white);
+      border-width: 10px 10px 10px 0;
+      border-color: transparent var(--white) transparent transparent;
+    }
+
+    .timeline-number {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      right: -20px;
+      background-color: var(--secondary);
+      border: 4px solid var(--primary);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--white);
+      font-weight: bold;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .timeline-item:hover .timeline-number {
+      transform: scale(1.2);
+      background-color: var(--primary);
+      border-color: var(--secondary);
+    }
+
+    .timeline-item:nth-child(even) .timeline-number {
+      left: -20px;
+      right: auto;
+    }
+
+    .testimonial-card {
+      background-color: var(--white);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 5px 15px var(--shadow-light);
+      height: 100%;
+      transition: all 0.4s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px var(--shadow-medium);
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+    }
+
+    .testimonial-author img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:hover .testimonial-author img {
+      transform: scale(1.1);
+    }
+
+    .stats-section {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 80px 0;
+      border-radius: 15px;
+    }
+
+    .stat-item {
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .stat-item:hover {
+      transform: scale(1.05);
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .stat-text {
+      font-size: 1.2rem;
+    }
+
+    .blog-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px var(--shadow-light);
+      transition: all 0.4s ease;
+      height: 100%;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px var(--shadow-medium);
+    }
+
+    .blog-img {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.5s ease;
+    }
+
+    .blog-card:hover .blog-img {
+      transform: scale(1.1);
+    }
+
+    .blog-content {
+      padding: 20px;
+    }
+
+    .contact-section {
+      background-color: var(--light);
+    }
+
+    .contact-info {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 40px;
+      border-radius: 15px;
+      height: 100%;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .contact-info:hover {
+      box-shadow: 0 10px 30px var(--shadow-medium);
+    }
+
+    .contact-info i {
+      font-size: 1.5rem;
+      margin-right: 15px;
+      width: 30px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info:hover i {
+      color: var(--accent);
+    }
+
+    /* Form Enhancements */
+    .form-control {
+      transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 0 0.25rem rgba(var(--secondary-rgb), 0.25);
+      transform: scale(1.02);
+    }
+
+    /* Footer Enhancements */
+    footer {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 60px 0 20px;
+      overflow: hidden;
+    }
+
+    .footer-links h5 {
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-links h5:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background-color: var(--secondary);
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links ul li a {
+      color: var(--light-gray);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .footer-links ul li a:hover {
+      color: var(--white);
+      padding-left: 5px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: var(--transparent-white-01);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      color: var(--white);
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: var(--secondary);
+      transform: translateY(-5px) rotate(360deg);
+    }
+
+    /* Navbar on scroll */
+    .navbar-scrolled {
+      background-color: var(--white) !important;
+      box-shadow: 0 2px 10px var(--shadow-light);
+    }
+
+    /* Active menu item underline */
+    .nav-link.active {
+      position: relative;
+    }
+
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var(--secondary);
+      border-radius: 2px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-section p {
+        font-size: 1.1rem;
+      }
+
+      .timeline::after {
+        left: 31px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .timeline-item:nth-child(even) {
+        left: 0;
+      }
+
+      .timeline-number {
+        left: -18px !important;
+        right: auto;
+      }
+
+      .timeline-item:nth-child(odd) .timeline-content::after {
+        left: -15px;
+        right: auto;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--white) transparent transparent;
+      }
+
+      /* Mobile menu active item */
+      .nav-link.active::after {
+        width: 30px;
+        left: 15px;
+      }
+    }
+
+    /* WhatsApp Floating Button */
+    /* WhatsApp Floating Button - Fixed for Mobile */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+      text-decoration: none !important;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128c7e;
+      transform: scale(1.1);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+      text-decoration: none !important;
+    }
+
+    .whatsapp-float i {
+      text-decoration: none !important;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    /* Responsive adjustments - Fixed for better mobile visibility */
+    @media (max-width: 768px) {
+      .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 25px;
+        right: 25px;
+        font-size: 28px;
+        /* Ensure it's always visible */
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+    }
+
+    /* Extra small devices */
+    @media (max-width: 480px) {
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span style="color: var(--primary)">VisaOne</span><span style="color: var(--secondary)">Global</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#why-germany">Why Germany</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#programs">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#process">Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Success Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <h1>Start Your Nursing or Physiotherapy Career in Germany</h1>
+          <p>
+            From language training to visa and placement — VisaOne Global
+            makes your journey smooth, transparent, and successful.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-primary">Apply Now</a>
+            <a href="#contact" class="btn btn-outline-light">Free Consultation</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row highlight-bar" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="col-md-3 col-6 highlight-item">
+          <i class="fas fa-user-graduate"></i>
+          <h5>100+ Students Sent</h5>
+        </div>
+        <div class="col-md-3 col-6 highlight-item">
+          <i class="fas fa-handshake"></i>
+          <h5>Direct German Partnerships</h5>
+        </div>
+        <div class="col-md-3 col-6 highlight-item">
+          <i class="fas fa-eye"></i>
+          <h5>Transparent Process</h5>
+        </div>
+        <div class="col-md-3 col-6 highlight-item">
+          <i class="fas fa-language"></i>
+          <h5>a1-b2 German Classes</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Germany Section -->
+  <section id="why-germany" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="zoom-in" data-aos-duration="800">
+        Why Choose Germany?
+      </h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <div class="why-germany-card">
+            <i class="fas fa-euro-sign"></i>
+            <h4>Free Ausbildung Training</h4>
+            <p>
+              Earn while you learn with our comprehensive Ausbildung programs
+              in Germany.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <div class="why-germany-card">
+            <i class="fas fa-user-md"></i>
+            <h4>High Demand for Healthcare Professionals</h4>
+            <p>
+              Germany has a growing need for nurses and physiotherapists with
+              excellent career prospects.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+          <div class="why-germany-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h4>Free Education & Salary</h4>
+            <p>
+              Receive free education with a salary from day one of your
+              Ausbildung program.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="why-germany-card">
+            <i class="fas fa-briefcase"></i>
+            <h4>100% Job Guarantee</h4>
+            <p>
+              Secure employment after completing your Ausbildung with our
+              partner institutions.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+          <div class="why-germany-card">
+            <i class="fas fa-passport"></i>
+            <h4>Pathway to Permanent Residency</h4>
+            <p>
+              Clear pathway to obtain permanent residency in Germany after
+              your training.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+          <div class="why-germany-card">
+            <i class="fas fa-chart-line"></i>
+            <h4>Career Growth Opportunities</h4>
+            <p>
+              Excellent opportunities for professional development and
+              specialization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="zoom-in" data-aos-duration="800">
+        Explore Our Top Programs
+      </h2>
+      <div class="row g-4">
+        <!-- Program 1 :Nursing Job Visa (Anerkennung Program) -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+          <div class="program-card">
+            <div class="program-header">
+              <h3>Nursing Job Visa (Anerkennung Program)</h3>
+            </div>
+            <div class="program-body">
+              <div class="program-feature">
+                <i class="fas fa-user-md"></i>
+                <div><strong>For:</strong> GNM / BSc Nurses</div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-euro-sign"></i>
+                <div><strong>Salary:</strong> €2,800 – €4,000 per month</div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>Includes:</strong> Anerkennung, Translation,
+                  Document Assistance, Interview Setup
+                </div>
+              </div>
+              <a href="#contact" class="btn btn-primary mt-3 w-100">Start Job Visa Process</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2 : Nursing Ausbildung (Germany) -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+          <div class="program-card">
+            <div class="program-header">
+              <h3>Nursing Ausbildung (Germany)</h3>
+            </div>
+            <div class="program-body">
+              <div class="program-feature">
+                <i class="fas fa-clock"></i>
+                <div><strong>Duration:</strong> 3 Years</div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-euro-sign"></i>
+                <div><strong>Stipend:</strong> €1,100 – €1,500 per month</div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-graduation-cap"></i>
+                <div><strong>Requirements:</strong> 12th Pass, B1 German</div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>Includes:</strong> Language, Document Setup,
+                  Interview, Visa
+                </div>
+              </div>
+              <a href="#contact" class="btn btn-primary mt-3 w-100">Apply for Nursing Ausbildung</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 3 :Physiotherapy Ausbildung -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+          <div class="program-card">
+            <div class="program-header">
+              <h3>Physiotherapy Ausbildung</h3>
+            </div>
+            <div class="program-body">
+              <div class="program-feature">
+                <i class="fas fa-clock"></i>
+                <div><strong>Duration:</strong> 3 Years</div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-euro-sign"></i>
+                <div><strong>Stipend:</strong> €1,000 – €1,300 per month</div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>Requirements:</strong> 12th Science, B1 German
+                </div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>Job Guarantee:</strong> 100% job guarantee
+                  post-training
+                </div>
+              </div>
+              <a href="#contact" class="btn btn-primary mt-3 w-100">Join Physiotherapy Ausbildung</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 4 :German Language Courses -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+          <div class="program-card">
+            <div class="program-header">
+              <h3>German Language Courses</h3>
+            </div>
+            <div class="program-body">
+              <div class="program-feature">
+                <i class="fas fa-language"></i>
+                <div><strong>Levels:</strong> A1 to B2</div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-laptop"></i>
+                <div><strong>Format:</strong> Online + Offline (Gujarat)</div>
+              </div>
+              <div class="program-feature">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <div><strong>Trainers:</strong> Native-level Trainers</div>
+              </div>
+              <a href="#contact" class="btn btn-primary mt-3 w-100">Join Language Course</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="zoom-in" data-aos-duration="800">
+        Your Journey with VisaOne Global
+      </h2>
+      <div class="timeline">
+        <!-- Step 1 -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+          <div class="timeline-content">
+            <h4>Free Consultation & Eligibility Check</h4>
+            <p>
+              Our experts assess your profile and guide you on the best
+              pathway to Germany.
+            </p>
+            <div class="timeline-number">1</div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+          <div class="timeline-content">
+            <h4>German Language Training (A1–B2)</h4>
+            <p>
+              Comprehensive language courses to prepare you for life and work
+              in Germany.
+            </p>
+            <div class="timeline-number">2</div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+          <div class="timeline-content">
+            <h4>Document Preparation & Translation</h4>
+            <p>
+              We assist with all necessary documentation and certified
+              translations.
+            </p>
+            <div class="timeline-number">3</div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+          <div class="timeline-content">
+            <h4>Interview with German Partner Institutes</h4>
+            <p>
+              We coordinate interviews with our partner hospitals and training
+              institutions.
+            </p>
+            <div class="timeline-number">4</div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
+          <div class="timeline-content">
+            <h4>Visa Filing & Travel Support</h4>
+            <p>
+              Complete visa application assistance and pre-departure guidance.
+            </p>
+            <div class="timeline-number">5</div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="timeline-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
+          <div class="timeline-content">
+            <h4>Arrival & Support in Germany</h4>
+            <p>
+              Airport pickup, accommodation assistance, and ongoing support in
+              Germany.
+            </p>
+            <div class="timeline-number">6</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="#contact" class="btn btn-primary btn-lg">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="zoom-in" data-aos-duration="800">
+        Our Students in Germany
+      </h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              "Thanks to VisaOne Global, I am now doing my Nursing Ausbildung
+              in Munich. Everything was handled smoothly — from my B1 classes
+              to visa!"
+            </div>
+            <div class="testimonial-author">
+              <div>
+                <h5>Riya Patel</h5>
+                <p>Rajkot → Germany 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              "The team at VisaOne Global made my dream of working in Germany
+              a reality. The process was transparent and they supported me at
+              every step."
+            </div>
+            <div class="testimonial-author">
+              <div>
+                <h5>Amit Sharma</h5>
+                <p>Ahmedabad → Germany 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              "I'm now working as a physiotherapist in Berlin. The language
+              training and placement assistance from VisaOne Global were
+              exceptional."
+            </div>
+            <div class="testimonial-author">
+              <div>
+                <h5>Priya Mehta</h5>
+                <p>Surat → Germany 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="zoom-in" data-aos-duration="800">
+        About Us
+      </h2>
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+          <p class="lead">
+            VisaOne Global is a trusted overseas consultancy helping Indian
+            nurses and healthcare students build their careers in Germany.
+          </p>
+          <p>
+            Based in Gujarat, we specialize in Nursing Job Visa, Ausbildung,
+            and Physiotherapy Programs, in collaboration with German hospitals
+            and training institutions.
+          </p>
+          <p>
+            Our mission is simple — to guide, train, and place every deserving
+            healthcare professional in a rewarding career abroad.
+          </p>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+          <img
+            src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+            alt="About VisaOne Global" class="img-fluid rounded" />
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="stats-section mt-5">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+              <div class="stat-number" data-count="5">0</div>
+              <div class="stat-text">Years Experience</div>
+            </div>
+            <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+              <div class="stat-number" data-count="120">0</div>
+              <div class="stat-text">Students Placed</div>
+            </div>
+            <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+              <div class="stat-number" data-count="15">0</div>
+              <div class="stat-text">German Partnerships</div>
+            </div>
+            <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+              <div class="stat-number" data-count="100">0</div>
+              <div class="stat-text">End-to-End Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="zoom-in" data-aos-duration="800">
+        Talk to Our Experts Today
+      </h2>
+      <p class="text-center mb-5" data-aos="fade-up" data-aos-duration="800">
+        Get a free consultation and know your eligibility for Germany. Our
+        experts will guide you step by step.
+      </p>
+
+      <div class="row">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="800">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="col-md-6">
+                <label for="whatsapp" class="form-label">WhatsApp Number</label>
+                <input type="tel" class="form-control" id="whatsapp" required />
+              </div>
+              <div class="col-md-6">
+                <label for="program" class="form-label">Interested Program</label>
+                <select class="form-select" id="program" required>
+                  <option value="" selected disabled>Select a program</option>
+                  <option value="nursing-ausbildung">
+                    Nursing Ausbildung
+                  </option>
+                  <option value="physiotherapy-ausbildung">
+                    Physiotherapy Ausbildung
+                  </option>
+                  <option value="nursing-job-visa">Nursing Job Visa</option>
+                  <option value="language-course">
+                    German Language Course
+                  </option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-4 mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="800">
+          <div class="contact-info">
+            <h4 class="mb-4">Contact Information</h4>
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h6>Our Office</h6>
+                <p>Rajkot</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h6>Phone</h6>
+                <p>+91-XXXXXXXXXX</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h6>Email</h6>
+                <p>info@visaoneglobal.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-duration="800">
+          <h3 class="mb-3 navbar-brand">
+            <span style="color: var(--white)">VisaOne</span><span style="color: var(--secondary)">Global</span>
+          </h3>
+          <p>
+            VisaOne Global is a trusted overseas consultancy helping Indian
+            nurses and healthcare students build their careers in Germany.
+          </p>
+          <div class="social-icons mt-4">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0 footer-links" data-aos="fade-up" data-aos-duration="800"
+          data-aos-delay="100">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#why-germany">Why Germany</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-links" data-aos="fade-up" data-aos-duration="800"
+          data-aos-delay="200">
+          <h5>Programs</h5>
+          <ul>
+            <li><a href="#">Nursing Ausbildung</a></li>
+            <li><a href="#">Physiotherapy Ausbildung</a></li>
+            <li><a href="#">Nursing Job Visa</a></li>
+            <li><a href="#">German Language Courses</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+          <h5>Contact Info</h5>
+          <ul>
+            <li><i class="fas fa-map-marker-alt me-2"></i>Rajkot</li>
+            <li><i class="fas fa-phone me-2"></i> +91-XXXXXXXXXX</li>
+            <li>
+              <i class="fas fa-envelope me-2"></i> info@visaoneglobal.com
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="my-4" style="border-color: var(--dark-gray)" />
+
+      <div class="row align-items-center">
+        <div class="col-md-12 text-center">
+          <p class="mb-0">© 2025 VisaOne Global. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/?text=Hi%20VisaOne%20Global%2C%20I%20would%20like%20to%20know%20more%20about%20your%20programs%20in%20Germany"
+    class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href");
+        if (targetId === "#") return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: "smooth",
+          });
+
+          // Close mobile menu after clicking a link
+          const navbarToggler = document.querySelector(".navbar-toggler");
+          const navbarCollapse = document.querySelector(".navbar-collapse");
+          if (navbarToggler && navbarCollapse.classList.contains("show")) {
+            navbarToggler.click();
+          }
+        }
+      });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("navbar-scrolled");
+      } else {
+        navbar.classList.remove("navbar-scrolled");
+      }
+    });
+
+    // Active menu item highlighting
+    function highlightActiveMenuItem() {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.clientHeight;
+
+        if (
+          window.scrollY >= sectionTop &&
+          window.scrollY < sectionTop + sectionHeight
+        ) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${currentSection}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+
+    // Initialize active menu item on page load
+    document.addEventListener("DOMContentLoaded", highlightActiveMenuItem);
+
+    // Update active menu item on scroll
+    window.addEventListener("scroll", highlightActiveMenuItem);
+
+    // Counting animation function - Updated to show "+" for all counts
+    function startCountingAnimation(element) {
+      const target = parseInt(element.getAttribute("data-count"));
+      const duration = 2000; // 2 seconds
+      const step = target / (duration / 16); // 60fps
+      let current = 0;
+
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          clearInterval(timer);
+          current = target;
+          // Add '+' sign for all numbers
+          element.textContent = target + "+";
+        } else {
+          element.textContent = Math.floor(current);
+        }
+      }, 16);
+    }
+
+    // Trigger counting when stats section is in view
+    const statsObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const statNumbers = entry.target.querySelectorAll(".stat-number");
+            statNumbers.forEach((stat) => {
+              if (!stat.classList.contains("counted")) {
+                startCountingAnimation(stat);
+                stat.classList.add("counted");
+              }
+            });
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const statsSection = document.querySelector(".stats-section");
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+  </script>
+</body>
+
+</html>
